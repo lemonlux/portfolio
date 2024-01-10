@@ -2,9 +2,9 @@ export const CV = {
     person: {
       name: "Lucía",
       surname: "Martínez Cerón",
-      city: "Murcia, España",
+      brief: "FullStack Developer",
+      location: "Murcia, España",
       email: "sololucia17@gmail.com",
-      
       birthDate: "17/02/1996",
       image: "https://res.cloudinary.com/daxddugwt/image/upload/v1700143827/Captura_de_pantalla_2023-10-11_a_las_16.47.07_rltlp8.png",
       gitHub: "https://github.com/lemonlux/",
@@ -28,7 +28,7 @@ export const CV = {
         name: "Máster en Industria Cosmética",
         id: 2,
         date: "feb 2019 - jun 2020",
-        where: "Colegio Químicos de Murcia",
+        where: "Colegio de Químicos de Murcia",
         description:
           ""
       },
