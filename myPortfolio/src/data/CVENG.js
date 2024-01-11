@@ -1,4 +1,4 @@
-export const CV = {
+export const CVENG = {
   person: {
     name: "Lucía",
     surname: "Martínez Cerón",

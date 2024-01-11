@@ -87,10 +87,11 @@ export const themeDark = {
   },
   typography: {
     fonts: {
-      bold: "/assets/fonts/NOMBRE.FONT.ttf",
-      italic: "/assets/fonts/NOMBRE.FONT.ttf",
-      regular: "/assets/fonts/NOMBRE.FONT.ttf",
-      semibold: "/assets/fonts/NOMBRE.FONT.ttf",
+      bold: "/assets/fonts/Subjectivity-Bold.otf",
+      thin: "/assets/fonts/Subjectivity-Thin.otf",
+      regular: "/assets/fonts/Subjectivity-Regular.otf",
+      semibold: "/assets/fonts/Subjectivity-Medium.otf",
+      black: "/assets/fonts/Subjectivity-Black.otf",
     },
   },
   spacing,
