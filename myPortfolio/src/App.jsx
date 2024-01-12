@@ -5,13 +5,17 @@ import { createTheme } from "./styles/utils";
 import { themeDark} from "./styles/theme";
 
 
+
 const  App =() =>{
+
+  
 
   return (
     <>
      <ThemeProvider
         theme={createTheme(themeDark)}
       >
+
     <GlobalStyles/>
     <Outlet/>
     </ThemeProvider>

@@ -2,32 +2,39 @@ import { useState } from "react"
 import { NameElement } from "../../components/Styles/Name.element"
 import { CV } from "../../data/CV"
 import { Main } from "../../components/Main/Main"
+import { SectionElement } from "../../components/Styles/Section.element"
+import { FlexDir } from "../../components/Layout/FlexDir"
+import { useLanguage } from "../../context/languageContext"
+import { CVENG } from "../../data/CVENG"
 
 export const Home = () => {
 const [page, setPage] = useState("about")
 
+const { language, setLanguage, toggleLanguage } = useLanguage()
 
-
-const { person } = CV
-
+ const { person } = language == "spanish" ? CV : CVENG
 
   return (
     <>
-    <section>
+    <FlexDir >
+      <button onClick={()=> toggleLanguage()}>{language == "spanish" ? "ENG" : "SPA"}</button>
+    <SectionElement width={"40vw"}>
     <NameElement>
+      <img src={person.image} alt="imagen de perfil"/>
       <h1>{person.name} {person.surname}</h1>
-      <h2>{person.brief}</h2>
+      <h3>{person.brief}</h3>
 
     </NameElement>
 
-    <button onClick={()=>setPage("about")}>Sobre mí</button>
-    <button onClick={()=>setPage("projects")}>Projects</button>
-    <button onClick={()=>setPage("contact")}>Contact</button>
-    </section>
+    <button onClick={()=>setPage("about")}>{language == "spanish" ? "Sobre mi" : "About me"}</button>
+    <button onClick={()=>setPage("projects")}>{language == "spanish" ? "Proyectos" : "Projects"}</button>
+    <button onClick={()=>setPage("contact")}>{language == "spanish" ? "Contacto" : "Contact"}</button>
+    </SectionElement>
 
-    <section>
+    <SectionElement width={"60vw"}>
     <Main page={page}/>
-    </section>
+    </SectionElement>
+    </FlexDir>
     </>
    
   )

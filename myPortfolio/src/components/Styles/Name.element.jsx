@@ -4,9 +4,9 @@ import styled from '@emotion/styled'
 const NameStyle = styled.div`
 
 
-& h1{
-
-
+& img{
+  width: 100px;
+  
 }
 
 `

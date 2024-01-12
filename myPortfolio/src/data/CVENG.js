@@ -2,15 +2,13 @@ export const CVENG = {
   person: {
     name: "Lucía",
     surname: "Martínez Cerón",
-    brief: "FullStack Developer",
-    location: "Murcia, España",
-    email: "sololucia17@gmail.com",
+    image: "https://res.cloudinary.com/daxddugwt/image/upload/v1704896691/perfil_zdg4x7.png" ,
+    brief: "FullStack Developer | Chemist Graduate",
+    location: "Murcia, Spain",
+    email: "lucia.mceron@gmail.com",
     birthDate: "17/02/1996",
-    image:
-      "https://res.cloudinary.com/daxddugwt/image/upload/v1700143827/Captura_de_pantalla_2023-10-11_a_las_16.47.07_rltlp8.png",
     gitHub: "https://github.com/lemonlux/",
-    linkedin:
-      "https://www.linkedin.com/in/luc%C3%ADa-mart%C3%ADnez-cer%C3%B3n-7326b2185/",
+    linkedin:"https://www.linkedin.com/in/luc%C3%ADa-mart%C3%ADnez-cer%C3%B3n-7326b2185/",
     aboutMe: [
       "Junior FullStack Developer, working freelance since finishing the Neoland Bootcamp",
       "Graduated in Chemistry with a Master's in Science and Cosmetic Industry, specialized in computational chemistry during my academic career",
@@ -64,38 +62,36 @@ export const CVENG = {
     {
       name: "Connect-a-mate",
       date: "dic 2023",
-      id: 3,
-      images: ["", ""],
+      image: "https://res.cloudinary.com/daxddugwt/image/upload/v1705060049/Captura_de_pantalla_2024-01-11_a_las_14.40.53_legrz1.png",
       description:
         "Final Bootcamp team project. Connect-a-mate is a social network designed for people who are looking for roommates with similar interests as them. This web includes user authentication and profile customization, a feed with posts, possibility to make reviews of each user, private chats and room details.",
-      technologies: "Javascript, Node.js, MongoDB, React, Styled Components",
-      url: "",
+      technologies: ["Javascript", "Node.js", "MongoDB", "React", "Styled Components"],
+      url: "https://connect-a-mate.vercel.app/",
       frontEnd: "https://github.com/neolandsep2023/Frontend",
       backEnd: "https://github.com/neolandsep2023/Backend",
     },
     {
       name: "Sports",
       date: "nov 2023",
-      id: 2,
-      images: ["", ""],
+      image: "https://res.cloudinary.com/daxddugwt/image/upload/v1705060048/Captura_de_pantalla_2024-01-11_a_las_12.27.09_wrsint.png",
       description:
         'React + Node.js team project I did with my classmates. With this project we established concepts of this two technologies, using a non-relational database such as MongoDB.',
-      technologies: "Javascript, CSS, Node.js, MongoDB, React",
+        technologies: ["Javascript", "Node.js", "MongoDB", "React", "HTML", "CSS"],
       url: "https://fifa-sports.vercel.app/",
       frontEnd: "https://github.com/eolimacion/reactFrontend",
       backEnd: "https://github.com/eolimacion/reactBackend",
     },
-    {
-      name: "Pokedex",
-      date: "oct 2023",
-      id: 1,
-      images: ["", ""],
-      description:
-        "Individual Javascript project where I praticed fetching the pokemon API, and included two minigames.",
-      technologies: "Javascript, CSS, HTML",
-      url: "",
-      gitHub: "",
-    },
+    // {
+    //   name: "Pokedex",
+    //   date: "oct 2023",
+    //   id: 1,
+    //   images: ["", ""],
+    //   description:
+    //     "Individual Javascript project where I praticed fetching the pokemon API, and included two minigames.",
+    //   technologies: "Javascript, CSS, HTML",
+    //   url: "",
+    //   gitHub: "",
+    // },
   ],
   languages: [
     {
