@@ -14,52 +14,12 @@ export const ZINDEX = {
   spinner: 300,
 };
 
-const PALETTE_COLOR_LIGHT = {
-  background: "#fff",
-  color:  "#fff",
-  button:  "#fff",
-  border:  "#fff",
-};
 
 const PALETTE_COLOR_DARK = {
   background:  "#fff",
   color:  "#fff",
   button:  "#fff",
   border:  "#fff",
-};
-
-export const themeLight = {
-  palette: {
-    background: {
-      main: PALETTE_COLOR_LIGHT.background,
-      light: PALETTE_COLOR_LIGHT.border,
-      dark: PALETTE_COLOR_LIGHT.background,
-    },
-    color: {
-      main: PALETTE_COLOR_LIGHT.color,
-    },
-    button: {
-      main: PALETTE_COLOR_LIGHT.button,
-    },
-    border: {
-      main: PALETTE_COLOR_LIGHT.border,
-
-    },
-  },
-  mediaquery: {
-    mobile: `@media (max-width: ${BREAKPOINTS.mobile}px)`,
-    tablet: `@media (min-width: ${BREAKPOINTS.tablet}px) and (max-width: ${BREAKPOINTS.laptop}px)`,
-    desktop: `@media (min-width: ${BREAKPOINTS.desktop}px)`,
-  },
-  typography: {
-    fonts: {
-      bold: "/assets/fonts/NOMBRE.FONT.ttf",
-      italic: "/assets/fonts/NOMBRE.FONT.ttf",
-      regular: "/assets/fonts/NOMBRE.FONT.ttf",
-      semibold: "/assets/fonts/NOMBRE.FONT.ttf",
-    },
-  },
-  spacing,
 };
 
 export const themeDark = {

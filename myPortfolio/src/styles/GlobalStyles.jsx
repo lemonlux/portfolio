@@ -7,7 +7,7 @@ export const GlobalStyles = () => {
       styles={(theme) => [
         {
           "*": {
-            fontFamily: 'Poppins',
+            fontFamily: 'Rubik',
             boxSizing: "border-box",
           },
           "html,body": {
@@ -15,9 +15,6 @@ export const GlobalStyles = () => {
             width: "100vw",
             padding: 0,
             margin: 0,
-            fontFamily: theme.typography.fonts.regular,
-            backgroundColor: theme.palette.background.main,
-            color: theme.palette.textColor.main,
           },
 
           "::-webkit-scrollbar": {
