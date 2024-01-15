@@ -5,7 +5,7 @@ import { ProjectElement } from "../Styles/Project.element";
 
 export const Main = ({ page }) => {
   const { language } = useLanguage();
-  const { projects } = language == "spanish" ? CV : CVENG;
+  const { projects, person } = language == "spanish" ? CV : CVENG;
   switch (page) {
     case "about":
       return (
@@ -69,6 +69,8 @@ export const Main = ({ page }) => {
               </p>
             </>
           )}
+          <p>{person.tech}</p>
+              <p>{person.plusInfo}</p>
         </>
       );
     case "projects":

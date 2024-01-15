@@ -14,6 +14,8 @@ export const CVENG = {
       "Graduated in Chemistry with a Master's in Science and Cosmetic Industry, specialized in computational chemistry during my academic career",
       "Seeking a job opportunity to keep learning and improve on my programming skills.",
     ],
+    tech: "I work with various technologies and methodologies",
+    plusInfo: "Currently studying: ",
   },
   education: [
     {

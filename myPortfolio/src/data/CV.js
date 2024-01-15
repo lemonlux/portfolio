@@ -15,6 +15,8 @@ export const CV = {
          "Actualmente me encuentro buscando un trabajo que me brinde la oportunidad de adentrarme laboralmente en el sector del web development, mientras desarrollo proyectos por mi cuenta y sigo formándome en las tecnologías que me interesan.",
          "Como curiosidad, me encanta dedicar mi tiempo libre a la ilustración digital, un hobbie que tengo desde hace años."
       ],
+      tech: "Trabajo con varias tecnologías y metodologías, aunque me encuentro en continuo aprendizaje.",
+      plusInfo: "Actualmente estudiando: ",
     },
     education: [
       {

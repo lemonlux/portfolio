@@ -6,6 +6,7 @@ import { SectionElement } from "../../components/Styles/Section.element"
 import { FlexDir } from "../../components/Layout/FlexDir"
 import { useLanguage } from "../../context/languageContext"
 import { CVENG } from "../../data/CVENG"
+import { Links } from "../../components"
 
 export const Home = () => {
 const [page, setPage] = useState("about")
@@ -23,6 +24,7 @@ const { language, setLanguage, toggleLanguage } = useLanguage()
       <img src={person.image} alt="imagen de perfil"/>
       <h1>{person.name} {person.surname}</h1>
       <h3>{person.brief}</h3>
+      <Links person={person}/>
 
     </NameElement>
 
