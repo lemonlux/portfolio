@@ -3,6 +3,7 @@ export const CVENG = {
     name: "Lucía",
     surname: "Martínez Cerón",
     image: "https://res.cloudinary.com/daxddugwt/image/upload/v1704896691/perfil_zdg4x7.png" ,
+    CVpdf: "https://drive.google.com/file/d/1kLAJ1tNun-g-N_PItMJBnDldSsSI8HpT/view?usp=sharing",
     brief: "FullStack Developer | Chemist Graduate",
     location: "Murcia, Spain",
     email: "lucia.mceron@gmail.com",

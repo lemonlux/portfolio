@@ -16,10 +16,11 @@ export const ZINDEX = {
 
 
 const PALETTE_COLOR_DARK = {
-  background:  "#fff",
-  color:  "#fff",
+  background:  "#282a33",
+  color:  "#e1e1e3",
+  secondColor: "#d182e8",
   button:  "#fff",
-  border:  "#fff",
+  border:  "#2f2e33",
 };
 
 export const themeDark = {
@@ -31,6 +32,7 @@ export const themeDark = {
     },
     color: {
       main: PALETTE_COLOR_DARK.color,
+      enhance: PALETTE_COLOR_DARK.secondColor
     },
     button: {
       main: PALETTE_COLOR_DARK.button,

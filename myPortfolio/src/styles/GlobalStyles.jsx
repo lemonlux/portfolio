@@ -7,14 +7,23 @@ export const GlobalStyles = () => {
       styles={(theme) => [
         {
           "*": {
-            fontFamily: 'Rubik',
+            fontFamily: 'Onest',
             boxSizing: "border-box",
+            color: theme.palette.color.main,
           },
           "html,body": {
             height: "100vh",
             width: "100vw",
+            background: theme.palette.background.main,
             padding: 0,
             margin: 0,
+          },
+          "p":{
+            fontWeight: 300,
+          },
+          "span":{
+            color: theme.palette.color.enhance,
+            fontWeight: 600,
           },
 
           "::-webkit-scrollbar": {

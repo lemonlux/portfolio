@@ -10,14 +10,14 @@ export const Main = ({ page }) => {
     case "about":
       return (
         <>
-          <h2>{language == "spanish" ? "Sobre mi" : "About me"}</h2>
+          <h2><span>{language == "spanish" ? "Sobre mi" : "About me"}</span></h2>
           {language == "spanish" ? (
             <>
               <p>
                 Siempre me ha interesado mucho la informática, tanto que, aunque
                 estudié química, estuve 2 años como alumna interna durante la
                 carrera desarrollando un proyecto de{" "}
-                <strong>química computacional</strong>, en el que más tarde basé
+                <span>química computacional</span>, en el que más tarde basé
                 mi TFG.
               </p>
               <p>
@@ -25,16 +25,16 @@ export const Main = ({ page }) => {
                 cosmética y empecé trabajando como Analista de Laboratorio,
                 puesto el cual he desempeñado durante 4 años, hasta que por fin
                 me decidí a seguir formándome en lo que realmente me interesa:{" "}
-                <strong>la programación</strong>.
+                <span>la programación</span>.
               </p>
               <p>
-                Actualmente me encuentro <strong>buscando un trabajo</strong>{" "}
+                Actualmente me encuentro <span>buscando un trabajo</span>{" "}
                 que me brinde la oportunidad de adentrarme laboralmente en el
                 sector del web
-                <strong>
+                <span>
                   {" "}
                   mientras desarrollo proyectos por mi cuenta y sigo formándome
-                </strong>{" "}
+                </span>{" "}
                 en las tecnologías que me interesan.
               </p>
               <p>
@@ -47,7 +47,7 @@ export const Main = ({ page }) => {
               <p>
                 I have always been very interested in IT. Although I studied
                 chemistry at university, I spent 2 years as a boarding student
-                working on a <strong>computational chemistry</strong> project.
+                working on a <span>computational chemistry</span> project.
                 This later became the foundation of my Bachelor's Degree Final
                 Project.
               </p>
@@ -56,13 +56,13 @@ export const Main = ({ page }) => {
                 in Cosmetic Science and Industry. I started my career as a
                 Laboratory Analyst, a position I held for 4 years, until I
                 finally decided to further my education in what truly interests
-                me: <strong>become a developer</strong>.
+                me: <span>become a developer</span>.
               </p>
               <p>
-                Currently, I am actively <strong>seeking employment</strong>{" "}
+                Currently, I am actively <span>seeking employment</span>{" "}
                 that will allow me to start working as a web developer.
-                Meanwhile, <strong>I am working on some personal projects and continuing
-                studying</strong> languages and technologies that I'm interested in.
+                Meanwhile, <span>I am working on some personal projects and continuing
+                studying</span> languages and technologies that I'm interested in.
               </p>
               <p>
                 As a side note, I enjoy spending my free time drawing digital illustrations, a hobby I have been passionate about for quite a few years.
@@ -76,23 +76,27 @@ export const Main = ({ page }) => {
     case "projects":
       return (
         <>
-          <ProjectElement>
-            <h2>{language == "spanish" ? "Proyectos" : "Projects"}</h2>
+          
+            <h2><span>{language == "spanish" ? "Proyectos" : "Projects"}</span></h2>
+            
             {projects.map((project) => (
               <>
+              <ProjectElement>
                 <h4>{project.name}</h4>
                 <img src={project.image} alt={project.name} />
                 <p>{project.description}</p>
                 <a></a>
+                </ProjectElement>
               </>
             ))}
-          </ProjectElement>
+
         </>
       );
     case "contact":
       return (
         <>
-          <h2>{language == "spanish" ? "Contacto" : "Contact"}</h2>
+          <h2><span>{language == "spanish" ? "Contacto" : "Contact"}</span></h2>
+          <p></p>
         </>
       );
 

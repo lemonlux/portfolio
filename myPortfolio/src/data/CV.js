@@ -3,6 +3,7 @@ export const CV = {
       name: "Lucía",
       surname: "Martínez Cerón",
       image: "https://res.cloudinary.com/daxddugwt/image/upload/v1704896691/perfil_zdg4x7.png" ,
+      CVpdf: "https://drive.google.com/file/d/1txOeBZ14_o-u2K566rrPbGqYuymm89w1/view?usp=sharing",
       brief: "FullStack Developer | Graduada en Química",
       location: "Murcia, España",
       email: "lucia.mceron@gmail.com",

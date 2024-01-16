@@ -23,7 +23,7 @@ const { language, setLanguage, toggleLanguage } = useLanguage()
     <NameElement>
       <img src={person.image} alt="imagen de perfil"/>
       <h1>{person.name} {person.surname}</h1>
-      <h3>{person.brief}</h3>
+      <h3><span>{person.brief}</span></h3>
       <Links person={person}/>
 
     </NameElement>
