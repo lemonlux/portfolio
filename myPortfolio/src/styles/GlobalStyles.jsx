@@ -7,12 +7,13 @@ export const GlobalStyles = () => {
       styles={(theme) => [
         {
           "*": {
-            fontFamily: 'Onest',
+           
             boxSizing: "border-box",
             color: theme.palette.color.main,
           },
           "html,body": {
             height: "100vh",
+            fontFamily: 'Onest',
             width: "100vw",
             background: theme.palette.background.main,
             padding: 0,

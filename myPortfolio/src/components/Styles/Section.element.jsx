@@ -5,6 +5,8 @@ const SectionElementStyle = styled.section`
 padding: 1rem;
 height: 100vh;
 width: ${({width})=> width};
+display: flex;
+flex-direction: column;
 
 `
 

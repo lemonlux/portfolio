@@ -1,6 +1,7 @@
 import { useLanguage } from "../../context/languageContext";
 import { CV } from "../../data/CV";
 import { CVENG } from "../../data/CVENG";
+import { H2Element } from "../Styles/H2.element";
 import { ProjectElement } from "../Styles/Project.element";
 
 export const Main = ({ page }) => {
@@ -10,7 +11,7 @@ export const Main = ({ page }) => {
     case "about":
       return (
         <>
-          <h2><span>{language == "spanish" ? "Sobre mi" : "About me"}</span></h2>
+          <H2Element size="40px">#<span>{language == "spanish" ? "sobre mi" : "about me"}</span></H2Element>
           {language == "spanish" ? (
             <>
               <p>
@@ -77,12 +78,12 @@ export const Main = ({ page }) => {
       return (
         <>
           
-            <h2><span>{language == "spanish" ? "Proyectos" : "Projects"}</span></h2>
+            <H2Element size="40px">#<span>{language == "spanish" ? "proyectos" : "projects"}</span></H2Element>
             
             {projects.map((project) => (
               <>
               <ProjectElement>
-                <h4>{project.name}</h4>
+                <h4><span>{project.name}</span></h4>
                 <img src={project.image} alt={project.name} />
                 <p>{project.description}</p>
                 <a></a>
@@ -95,7 +96,7 @@ export const Main = ({ page }) => {
     case "contact":
       return (
         <>
-          <h2><span>{language == "spanish" ? "Contacto" : "Contact"}</span></h2>
+          <H2Element size="40px">#<span>{language == "spanish" ? "contacto" : "contact"}</span></H2Element>
           <p></p>
         </>
       );
