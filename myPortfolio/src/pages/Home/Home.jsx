@@ -9,6 +9,7 @@ import { CVENG } from "../../data/CVENG"
 import { Links } from "../../components"
 import { H2Element } from "../../components/Styles/H2.element"
 import { ButtonElement } from "../../components/Styles/Button.element"
+import { DropdownElement } from "../../components/Styles/Dropdown.element"
 
 export const Home = () => {
 const [page, setPage] = useState("about")
@@ -20,7 +21,9 @@ const { language, setLanguage, toggleLanguage } = useLanguage()
   return (
     <>
     <FlexDir >
-      <ButtonElement onClick={()=> toggleLanguage()}>{language == "spanish" ? "ENG" : "SPA"}</ButtonElement>
+
+      {/* <ButtonElement onClick={()=> toggleLanguage()}>{language == "spanish" ? "ENG" : "SPA"}</ButtonElement> */}
+<DropdownElement setLanguage={setLanguage} language={language}/>
     <SectionElement width={"40vw"}>
     <NameElement>
       <img src={person.image} alt="imagen de perfil"/>

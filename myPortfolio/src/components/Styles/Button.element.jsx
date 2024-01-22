@@ -12,10 +12,16 @@ background: none;
     font-family: inherit;
 
 
-    & :hover {
+  :hover {
         color: ${({theme})=> theme.palette.color.enhance};
         font-family: "Fira Code";
-        transform: scale(1.2);
+        font-weight: 600;
+
+    }
+
+    :hover::before{
+      color: white;
+      content: "#"
     }
 
 `
